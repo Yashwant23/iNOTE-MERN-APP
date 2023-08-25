@@ -3,9 +3,8 @@ import React, { useState } from 'react'
 import NoteContext from './noteContext'
 
 
-
 const NoteState = (props) => {
-    const host = "http://localhost:5000"
+    const host = "https://inote-mern-app.onrender.com"
 
     const [notes, setNotes] = useState([{}])
     const getNotes = async () => {

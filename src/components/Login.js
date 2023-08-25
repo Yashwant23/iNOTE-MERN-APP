@@ -10,7 +10,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const { email, password } = credential
-        const res = await fetch("http://localhost:5000/api/auth/login", {
+        const res = await fetch("https://inote-mern-app.onrender.com/api/auth/login", {
             method: 'POST',
             body: JSON.stringify({ email, password }),
             headers: {

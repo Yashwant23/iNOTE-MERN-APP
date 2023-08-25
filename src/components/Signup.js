@@ -12,7 +12,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const { name, email, password } = credential
-        const res = await fetch("http://localhost:5000/api/auth/createUser", {
+        const res = await fetch("https://inote-mern-app.onrender.com/api/auth/createUser", {
             method: 'POST',
             body: JSON.stringify({ name, email, password }),
             headers: {
