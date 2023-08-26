@@ -33,17 +33,17 @@ const Login = () => {
     }
 
     return (
-        <div className='container my-3'>
+        <div className='container d-inline-flex p-2 justify-content-center my-5 '>
             <form onSubmit={handleSubmit}>
 
                 <div className="form-group my-6">
-                    <label htmlFor="email">Email address</label>
-                    <input type="email" className="form-control my-3" id="email" aria-describedby="emailHelp" name="email" onChange={onChange} value={credential.email} placeholder="Enter email" />
+                    <label htmlFor="email" className='text-center'>Email address</label>
+                    <input type="email" className="form-control my-3 shadow-sm" id="email" aria-describedby="emailHelp" name="email" onChange={onChange} value={credential.email} placeholder="Enter email" />
 
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input type="password" className="form-control my-3" id="password" onChange={onChange} value={credential.password} name="password" />
+                    <label htmlFor="password" className='text-center'>Password</label>
+                    <input type="password" className="form-control my-3 shadow-sm" id="password" onChange={onChange} value={credential.password} name="password" />
                 </div>
 
                 <button type="submit text-center" className="btn btn-primary">Submit</button>

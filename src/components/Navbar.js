@@ -12,8 +12,8 @@ const Navbar = () => {
 
     let location = useLocation();
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div className="container-fluid ">
                 <Link className="navbar-brand" to="/">iNotes</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
@@ -31,9 +31,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='container d-flex justify-content-end '>
-                {!localStorage.getItem('token') && <Link to={"/login"}><button className="btn btn-success  mx-1" >Login</button></Link>}
-                {!localStorage.getItem('token') && <Link to={"/signup"}><button className="btn btn-success  mx-1" >SignUp</button></Link>}
-                {localStorage.getItem('token') && <button className="btn btn-success  mx-1" onClick={handleClick} >Log Out</button>}
+                {!localStorage.getItem('token') && <Link to={"/login"}><button className="btn btn-outline-info btn-sm my-1 mx-1" >Login</button></Link>}
+                {!localStorage.getItem('token') && <Link to={"/signup"}><button className="btn btn-outline-info btn-sm my-1  mx-1" >SignUp</button></Link>}
+                {localStorage.getItem('token') && <button className="btn btn-outline-info btn-sm my-1  mx-1" onClick={handleClick} >Log Out</button>}
             </div>
         </nav>
 

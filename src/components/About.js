@@ -4,9 +4,12 @@ const About = () => {
 
 
     return (
-        <div className="container-fluid text-center my-3">
+        <div className="container-fluid text-center my-5">
             <h1>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt rerum voluptas! Minus accusantium molestiae doloremque iusto magni adipisci numquam ad, cum velit non nisi, deleniti voluptatum praesentium aliquid consequatur.
+                It is an app for making your notes and,
+            </h1>
+            <h1>
+                using it from where ever and when ever you want 😊 .
             </h1>
         </div>
     )

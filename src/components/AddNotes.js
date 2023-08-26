@@ -20,15 +20,15 @@ const AddNotes = () => {
                 <h2 className="text-center" >Add Note</h2>
                 <div className="my-3">
                     <label htmlFor="title" className="form-label mx-1">Note Title</label>
-                    <input type="text" className="form-control" id="title" name="title" placeholder="My-Note-Title" onChange={onChange} value={note.title} />
+                    <input type="text" className="form-control shadow-sm" id="title" name="title" placeholder="My-Note-Title" onChange={onChange} value={note.title} />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="description" className="form-label mx-1">Description</label>
-                    <textarea className="form-control" id="description" rows={3} value={note.description} name="description" onChange={onChange} />
+                    <textarea className="form-control shadow-sm" id="description" rows={3} value={note.description} name="description" onChange={onChange} />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="tag" className="form-label mx-1">Tag</label>
-                    <input type="text" className="form-control" id="tag" rows={3} value={note.tag} name="tag" onChange={onChange} />
+                    <input type="text" className="form-control shadow-sm" id="tag" rows={3} value={note.tag} name="tag" onChange={onChange} />
                 </div>
                 <button disabled={note.title.length < 5 || note.description.length < 5} type="Submit" className="btn btn-primary my-2" onClick={handleClick}>Add Notes</button>
             </form>
